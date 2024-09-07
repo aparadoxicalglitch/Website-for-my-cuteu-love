@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<title>Website for my Cuteu Love</title>
+	<link rel="stylesheet" type="text/css" href="css/format.css">
+</head>
+
+<body style="margin:0px">
+	<audio autoplay loop>
+		<source src="music/music.mp3" type="audio/mpeg">
+	</audio>
+	<canvas></canvas>
+	<div id="imgTxt">
+		<span id="Txt"></span> <br />
+		<span id="tmp"></span>
+		<img id="img" src="">
+	</div>
+	<div id="heartTxt">
+		<span id="clickMe">Touch My Heart</span>
+		<div id="heart">
+			<button id="button" onclick="play()"></button>
+		</div>
+	</div>
+	<div id="content">
+		<h2 id="together">Our love grows stronger with every tick of the clock</h2>
+		<div id="timer">
+			<b id="d"></b> Days
+			<b id="h"></b> Hours
+			<b id="m"></b> Minutes
+			<b id="s"></b> Seconds
+		</div>
+	</div>
+
+	<div id="typeDiv">
+		<span id="txt1"></span> <br />
+		<span id="txt2"></span>
+	</div>
+
+	<script>
+		var ok = 0;
+		var flag = 1;
+		var myImage = document.getElementById("img");
+		var myTxt = document.getElementById("Txt");
+		var imageArray = ["pic/pic1.jpg", "pic/pic6.jpg", "pic/pic3.jpg", "pic/pic4.jpg", "pic/pic2.jpg", "pic/pic5.jpg",
+			"pic/pic7.jpg","pic/pic8.jpg","pic/pic9.jpg","pic/pic10.jpg"];
+		var imageIndex = 0;
+		var txtArray = [
+			"April 25, 2024-Our first date, our first picture. I'll hold your hands, always and forever.💓♾️",
+			"The only person I wouldn't mind being stolen away by for a lifetime.🤭",
+			"April 26, 2024—the day that became the heart of my most cherished memories.✨🌌💞",
+			"How can I resist falling in love with you repeatedly when you’re the most special person to me🥺🫂💞",
+			"The closeness, the love, the joy we shared made time slip away in the most beautiful way.🥹😀💓",
+			"One of my favorite pictures of us holds countless meanings that only we truly understand. Our first hug will forever be etched in my memory.🫂💞✨",
+			"May 10, 2024—our day to reunite and create countless beautiful memories once more in a matching T-shirt.😀🥹😍",
+			"Those eyes—so captivating that I find my whole universe within them. I'll never grow weary of looking into yours.💞✨",
+			"Here comes the love of my life, with the most precious smile. I love you so much 💓🫂✨♾️",
+			"Life may have its ups and downs, but what matters most is that we’re holding each other’s hand through it all—and always will.💞♾️🌌"
+		];
+		var len = imageArray.length;
+		var t = 0;
+	</script>
+
+	<script type="text/javascript" src="./js/stars.js"></script>
+	<script type="text/javascript" src="./js/typeWriter.js"></script>
+	<script type="text/javascript" src="./js/date.js"></script>
+	<script type="text/javascript" src="./js/playImg.js"></script>
+</body>
+
+</html>
